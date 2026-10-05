@@ -1,0 +1,440 @@
+.newsboldtext {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #000000; FONT-FAMILY: arial
+}
+.newsboldtextbig {
+	FONT-WEIGHT: normal; FONT-SIZE: 20px; COLOR: #000000; FONT-FAMILY: verdana
+}
+.boldtextwhite {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.normaltextwhite {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.boldtextwhiteroyal {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #9ffd09; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.msboldtextwhite {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.msboldtext {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.boldtextvardana {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 20px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: vardana, verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.blockhead {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.paddingleft5 {
+	PADDING-LEFT: 5px
+}
+.paddingleft10 {
+	PADDING-LEFT: 10px
+}
+.paddingleft15 {
+	PADDING-LEFT: 15px
+}
+.paddingleft20 {
+	PADDING-LEFT: 20px
+}
+.paddingleft30 {
+	PADDING-LEFT: 30px
+}
+.paddingleft40 {
+	PADDING-LEFT: 40px
+}
+.paddingleft50 {
+	PADDING-LEFT: 50px
+}
+.paddingleft100 {
+	PADDING-LEFT: 100px
+}
+.paddingleft150 {
+	PADDING-LEFT: 150px
+}
+.bigtest {
+	PADDING-LEFT: 10px; FONT-SIZE: 11px
+}
+.headingtext {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.pageheading {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #f58220; LINE-HEIGHT: 10px; PADDING-TOP: 5px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; HEIGHT: 10px
+}
+.bredcrums {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #3366ff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.bredcrums:hover {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+.bredcrumshead {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 11px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; TEXT-DECORATION: none
+}
+.bredcrumshead:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 11px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; TEXT-DECORATION: underline
+}
+.detaillink {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #3366ff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.detaillink:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+.detaillink:visited {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #3366ff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+H1 {
+	MARGIN-TOP: 0.25em; FONT-WEIGHT: normal; FONT-SIZE: 11px; MARGIN-BOTTOM: 0.5em; COLOR: #f58220; LINE-HEIGHT: 5px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+H2 {
+	DISPLAY: inline; FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #f58220; PADDING-TOP: 5px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.pagesubheadorange {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #f58220; PADDING-TOP: 5px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.pagesubheadorangebold {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #c68602; PADDING-TOP: 5px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.divmsgbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #f58220; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-ALIGN: justify; TEXT-DECORATION: underline
+}
+.divmsg {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-ALIGN: justify
+}
+.pageheading2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.boldtextbackgroundactive-mymakaan {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; BACKGROUND-COLOR: #00a0e4
+}
+.boldtextbackgroundactive-search {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; BACKGROUND-COLOR: #67a80e
+}
+.boldtextbackgroundactive_listing_your_property {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; BACKGROUND-COLOR: #bbcfdf
+}
+.boldtextbackgroundactive_advertising {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; BACKGROUND-COLOR: #f57dc4
+}
+.boldtextbackgroundactive {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; BACKGROUND-COLOR: #ddbe25
+}
+.boldtextbackgroundinactive {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; BACKGROUND-COLOR: #f2da60
+}
+.td {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: black 1px solid; PADDING-LEFT: 2px; BACKGROUND: #9acb34; PADDING-BOTTOM: 2px; BORDER-LEFT: black 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.lineheight {
+	LINE-HEIGHT: 2px
+}
+.lineheight5 {
+	LINE-HEIGHT: 5px
+}
+.lineheight50 {
+	LINE-HEIGHT: 50px
+}
+.lineheight100 {
+	LINE-HEIGHT: 100px
+}
+.mediumlineheight {
+	LINE-HEIGHT: 6px
+}
+.lineheightgray {
+	LINE-HEIGHT: 1px; BACKGROUND-COLOR: #e8e8e8
+}
+.smallesttextbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 50px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.smallesttextbox2 {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 59px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.disabled {
+	BACKGROUND: #e8e8e8
+}
+.textarea {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.verysmallesttextbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 35px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.smalltextbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #3399cc 1px solid; WIDTH: 70px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; BACKGROUND-COLOR: #ffffff
+}
+.phonetextbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 100px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.smstextbox {
+	BORDER-RIGHT: #6f6f6f 1px solid; BORDER-TOP: #6f6f6f 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #6f6f6f 1px solid; WIDTH: 100px; COLOR: #333333; BORDER-BOTTOM: #6f6f6f 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 150px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textboxmailer {
+	BORDER-RIGHT: #c9c9c2 1px solid; BORDER-TOP: #c9c9c2 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #c9c9c2 1px solid; WIDTH: 150px; COLOR: #c9c9c2; BORDER-BOTTOM: #c9c9c2 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.propertytext {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 150px; COLOR: #2dafd3; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textsmallbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 150px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.phonesmalltextbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 100px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.mediumtextbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 11px; BORDER-LEFT: #3399cc 1px solid; WIDTH: 175px; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; BACKGROUND-COLOR: #ffffff
+}
+.fulltextbox {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 250px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.smallestdropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 50px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.verysmallestdropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 47px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.somemoresmalldropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 100px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.smalldropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 70px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.bigfromsmalldropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 110px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.smallmediumdropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 135px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.dropdownwidth175 {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; Z-INDEX: 5; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 175px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.dropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; Z-INDEX: -1000; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 150px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.mediumdropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; Z-INDEX: -1000; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 200px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.fulldropdown {
+	BORDER-RIGHT: #3399cc 1px solid; BORDER-TOP: #3399cc 1px solid; FONT-SIZE: 11px; Z-INDEX: -1000; BACKGROUND: #ffffff; BORDER-LEFT: #3399cc 1px solid; WIDTH: 250px; COLOR: #333333; BORDER-BOTTOM: #3399cc 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textarea {
+	BORDER-RIGHT: #d0d0dd 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #d0d0dd 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 11px; BACKGROUND: #ffffff; PADDING-BOTTOM: 3px; OVERFLOW: auto; BORDER-LEFT: #d0d0dd 1px solid; WIDTH: 250px; COLOR: #333333; PADDING-TOP: 3px; BORDER-BOTTOM: #d0d0dd 1px solid; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; HEIGHT: 270px
+}
+.textsmall {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textsmallnopad {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.text {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textgray {
+	PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #6f6f6f; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textgraybig {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #6f6f6f; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textblack13 {
+	PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textblack18 {
+	PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textwhite20 {
+	PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textpink18 {
+	PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #eb4961; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textsms {
+	PADDING-LEFT: 0px; FONT-SIZE: 10px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textmobile {
+	PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #9dc937; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textmstemplate {
+	PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #239cc9; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.protext {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #6f6f6f; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.mlistingtext {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #2eb3dc; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.propertydetailstext {
+	PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #198baf; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.app-download {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #5fb0c2; FONT-FAMILY: Zurich BT
+}
+.text-teaser {
+	PADDING-LEFT: 5px; FONT-SIZE: 14px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textheadersearchsmall {
+	FONT-SIZE: 11px; FONT-FAMILY: Zurich BT
+}
+.text:hover {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.leftpanelheading {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #900000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.formtext {
+	PADDING-LEFT: 5px; FONT-SIZE: 14px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.texthome {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textnopad {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.rightleftpadding {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px
+}
+.alreadyreg {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.textwhite {
+	PADDING-LEFT: 5px; FONT-SIZE: 14px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textwhitebig {
+	PADDING-LEFT: 5px; FONT-SIZE: 18px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textwhitenopad {
+	FONT-SIZE: 14px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textorange {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; COLOR: #ae921e; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textbrown {
+	FONT-SIZE: 14px; COLOR: #ab9122; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textbigblack {
+	FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.columnhead {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.columnheadsearchresults {
+	PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 13px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.columnheadgreen {
+	PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #008000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.headtext {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.textwhite {
+	PADDING-LEFT: 5px; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.smalltext {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.footertext {
+	FONT-SIZE: 10px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.texterror {
+	FONT: 11px normal ms sans serif, arial, vardana, Times new roman; COLOR: red
+}
+.texterrorbig {
+	FONT: 11px normal ms sans serif, arial, vardana, Times new roman; COLOR: red
+}
+.texterror2 {
+	FONT: 12px verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; COLOR: #000000
+}
+.reg_form {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px
+}
+.textbold {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.bottumcopyright {
+	FONT-SIZE: 10px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.hrefheadersmall {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #3366ff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.hrefheadersmall:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+.expandlink {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.expandlink:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+.expandlink:visited {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.hrefheadersmall:visited {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #3366ff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.hrefheaderunderline {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #3366ff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+.hrefheaderunderline:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+.hrefheaderunderline:visited {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #3366ff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+.normaltext {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.bannernormaltext {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif
+}
+.hreftemplate {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.hrefmstemplate {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #ffffff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.hreftemplate:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+.hrefheader {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #3366ff; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: none
+}
+.hrefheader:hover {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 11px; BORDER-LEFT: 0px; COLOR: #000000; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana, arial, tahoma, ms sans serif, times new roman, ms sans serif; TEXT-DECORATION: underline
+}
+
+.cursor {
+	CURSOR: pointer
+}
+DIV#mobiledisplay {
+	OVERFLOW: auto; WIDTH: 147px
+}
+#ajax_tooltipObj {
+	Z-INDEX: 1000000; TEXT-ALIGN: left
+}
+#ajax_tooltipObj DIV {
+	POSITION: relative
+}
+#ajax_tooltipObj .ajax_tooltip_arrow {
+	BACKGROUND-POSITION: left center; Z-INDEX: 1000005; LEFT: 0px; BACKGROUND-IMAGE: url(http://img.makaan.com/images/arrow-tooltip.gif); WIDTH: 20px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: 3px; HEIGHT: 60px
+}
+#ajax_tooltipObj .ajax_tooltip_content {
+	BORDER-RIGHT: #3399cc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #3399cc 1px solid; PADDING-LEFT: 5px; Z-INDEX: 1000001; LEFT: 18px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; OVERFLOW: auto; BORDER-LEFT: #3399cc 1px solid; WIDTH: 160px; PADDING-TOP: 5px; BORDER-BOTTOM: #3399cc 1px solid; POSITION: absolute; TOP: 17px; HEIGHT: auto; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+#ajax_tooltipObj_search .ajax_tooltip_arrow {
+	BACKGROUND-POSITION: left center; Z-INDEX: 1000005; LEFT: 0px; BACKGROUND-IMAGE: url(http://img.makaan.com/images/arrow-tooltip.gif); WIDTH: 20px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: 3px; HEIGHT: 60px
+}
+#ajax_tooltipObj_search .ajax_tooltip_content {
+	BORDER-RIGHT: #3399cc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #3399cc 1px solid; PADDING-LEFT: 5px; Z-INDEX: 1000001; LEFT: 18px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; OVERFLOW: auto; BORDER-LEFT: #3399cc 1px solid; WIDTH: 350px; PADDING-TOP: 5px; BORDER-BOTTOM: #3399cc 1px solid; POSITION: absolute; TOP: 17px; HEIGHT: auto; BACKGROUND-COLOR: #fffbd6; TEXT-ALIGN: center
+}
+.ajax_tooltip_arrow#ajax_tooltipObj_chooselistingpremium {
+	BACKGROUND-POSITION: left center; Z-INDEX: 1000005; LEFT: -250px; BACKGROUND-IMAGE: url(http://img.makaan.com/images/arrow-tooltip-listing.gif); WIDTH: 76px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: -34px; HEIGHT: 54px
+}
+#ajax_tooltipObj_chooselistingpremium .ajax_tooltip_content {
+	BORDER-RIGHT: #3399cc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #3399cc 1px solid; PADDING-LEFT: 5px; Z-INDEX: 1000001; LEFT: -400px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; OVERFLOW: auto; BORDER-LEFT: #3399cc 1px solid; WIDTH: 440px; PADDING-TOP: 5px; BORDER-BOTTOM: #3399cc 1px solid; POSITION: absolute; TOP: 18px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+#ajax_tooltipObj_chooselistingbasic .ajax_tooltip_arrow {
+	BACKGROUND-POSITION: left center; Z-INDEX: 1000005; LEFT: -320px; BACKGROUND-IMAGE: url(http://img.makaan.com/images/arrow-tooltip-listing.gif); WIDTH: 76px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: 87px; HEIGHT: 54px
+}
+#ajax_tooltipObj_chooselistingbasic .ajax_tooltip_content {
+	BORDER-RIGHT: #3399cc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #3399cc 1px solid; PADDING-LEFT: 5px; Z-INDEX: 1000001; LEFT: -410px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; OVERFLOW: auto; BORDER-LEFT: #3399cc 1px solid; WIDTH: 440px; PADDING-TOP: 5px; BORDER-BOTTOM: #3399cc 1px solid; POSITION: absolute; TOP: 140px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+

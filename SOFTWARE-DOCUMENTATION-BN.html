@@ -1,0 +1,158 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Requisition 2.0 — Role ও ব্যবহার নির্দেশিকা</title><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f1;color:#243b32;font-family:"Nirmala UI","Vrinda","Segoe UI",sans-serif;font-size:14px;line-height:1.9}.document{max-width:1060px;margin:32px auto;padding:42px 48px;background:white;border:1px solid #dce7e0;border-radius:16px}.doc-brand{font-family:"Segoe UI",sans-serif;font-size:12px;font-weight:650;color:#258265;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid #e0e9e3;padding-bottom:18px;margin-bottom:28px}h1{font-size:28px;line-height:1.5;color:#164a39;margin:0 0 16px}h2{font-size:21px;color:#1e6f53;border-bottom:1px solid #e2ebe6;padding-bottom:10px;margin:34px 0 14px;break-after:avoid}h3{font-size:16px;margin:22px 0 8px;break-after:avoid}p{margin:10px 0}li{margin:7px 0}code{font-family:Consolas,monospace;font-size:.87em;background:#f0f5f2;border-radius:4px;padding:2px 4px;overflow-wrap:anywhere}.table-wrap{overflow-x:auto;margin:18px 0}table{width:100%;border-collapse:collapse;font-size:12px;line-height:1.75}th,td{padding:11px 12px;border:1px solid #dce6e0;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#edf5f0;color:#28694f;font-weight:600}tr:nth-child(even) td{background:#fafcfb}thead{display:table-header-group}tr{break-inside:avoid}.print-button{border:0;border-radius:8px;background:#227a5b;color:white;padding:11px 20px;cursor:pointer;font:inherit;display:block;margin:20px auto}.doc-end{border-top:1px solid #e0e9e3;margin-top:28px;padding-top:14px;color:#819187;font-size:11px}@media(max-width:650px){.document{margin:0;padding:24px 18px;border-radius:0}h1{font-size:24px}table{min-width:600px}}@page{size:A4;margin:16mm 13mm}@media print{body{background:white;font-size:11px;line-height:1.8}.document{padding:0;margin:0;max-width:none;border:0;border-radius:0}.print-button{display:none}h1{font-size:24px}h2{font-size:17px;margin-top:25px}h3{font-size:14px}.table-wrap{overflow:visible}table{font-size:10px;min-width:0}th,td{padding:7px 8px}a{color:inherit}}
+</style></head><body><button class="print-button" onclick="window.print()">Print / Save as PDF</button><article class="document"><div class="doc-brand">REQUISITION 2.0 / USER DOCUMENTATION</div><h1>Requisition 2.0 — ব্যবহার, Role ও কাজের নির্দেশিকা</h1>
+<p>সংস্করণ: বর্তমান local software ও আধুনিক UI • প্রস্তুতের তারিখ: ৫ অক্টোবর ২০২৬</p>
+<p>এই নির্দেশিকা বর্তমান কোড, মেনু এবং পূর্বের browser পরীক্ষার ভিত্তিতে লেখা। এখানে role-এর দায়িত্ব ও স্বাভাবিক মেনু-access বর্ণনা করা হয়েছে। সব পেজে server permission সমানভাবে প্রয়োগ হয়েছে—এমন নিশ্চয়তা দেওয়া হচ্ছে না।</p>
+<h2>১. সফটওয়্যারটির উদ্দেশ্য</h2>
+<p>AIBL-এর cheque book এবং অন্যান্য security item-এর requisition, approval, order preparation, serial number, challan, dispatch ও receipt-এর তথ্য এক জায়গায় রাখা। Bank এবং Networld/operations দলের জন্য আলাদা portal আছে।</p>
+<p>এটি requisition ব্যবস্থাপনার সফটওয়্যার। পূর্ণ banking system, cheque-clearing system, accounting software অথবা printing-machine controller হিসেবে এর কার্যকারিতা পাওয়া যায়নি।</p>
+<h2>২. কীভাবে চালু ও লগইন করবেন</h2>
+<ol>
+<li><code>E:\Requisition software\Start-Requisition.cmd</code> double-click করুন।</li>
+<li>Operations-এর জন্য http://127.0.0.1:8080/net/net_signin.php খুলুন।</li>
+<li>Bank-এর জন্য http://127.0.0.1:8080/aibl/user_signin.php খুলুন।</li>
+<li>Manager-এর জন্য http://127.0.0.1:8080/aibl/manager_signin.php খুলুন।</li>
+<li>নিজের User ID ও password দিয়ে login করুন।</li>
+<li>কাজ শেষে account-এর পাশে Sign out চাপুন। Server বন্ধ করতে <code>Stop-Requisition.cmd</code> চালান।</li>
+</ol>
+<p>বর্তমান local test ID: Operations Admin = <code>localadmin</code>; Bank Admin = <code>LOCALADMIN</code>। Password আলাদা <code>LOCAL-LOGIN.txt</code> ফাইলে আছে; এই শেয়ারযোগ্য নির্দেশিকায় password লেখা হয়নি।</p>
+<p>Portal নির্বাচন করলেই role বদলায় না। Login করা account-এর সংরক্ষিত role অনুযায়ী access নির্ধারিত হয়। Operations Admin এবং Bank Admin দুটি আলাদা account ব্যবস্থা। Manager portal-এ Bank Admin login করলে overview-তে যায়; সে কারণে account Manager হয়ে যায় না।</p>
+<h2>৩. Role অনুযায়ী কার কী দায়িত্ব</h2>
+<div class="table-wrap"><table><thead><tr><th>Role</th><th>কার জন্য</th><th>স্বাভাবিক কাজ ও access</th><th>তথ্যের পরিসর / সীমা</th></tr></thead><tbody>
+<tr><td>Bank Admin (<code>admin</code>)</td><td>ব্যাংকের system administrator</td><td>Bank user তৈরি/সংশোধন; role, branch ও active status সেট; branch তৈরি/সংশোধন; overview ও total list</td><td>নতুন dashboard ও total list-এ সব branch; manager approval বা vendor production-এর স্বাভাবিক role নয়</td></tr>
+<tr><td>GSD (<code>gsd</code>)</td><td>ব্যাংকের কেন্দ্রীয় requisition তদারকি দল; GSD নামের পূর্ণরূপ প্রতিষ্ঠানের কাছে নিশ্চিত করতে হবে</td><td>সব branch-এর cheque/other item search, requisition তালিকা ও status দেখা; rejected request management-এর মেনু</td><td>কেন্দ্রীয় দৃশ্যমানতা; rejected-edit মেনু ও পেজের role-check-এর অসামঞ্জস্য আছে</td></tr>
+<tr><td>Branch User (<code>user</code>)</td><td>শাখার requisition entry ও receipt কর্মকর্তা</td><td>New cheque/item request; নিজের branch-এর search/list/status; dispatch হওয়া item গ্রহণের acknowledgement; password পরিবর্তন</td><td>dashboard ও সংশ্লিষ্ট branch search/list-এ collecting branch অনুযায়ী তথ্য; approval-এর দায়িত্ব Manager-এর</td></tr>
+<tr><td>Branch Manager (<code>manager</code>)</td><td>শাখার অনুমোদনকারী</td><td>branch-এর awaiting-approval request দেখা; approve/reject; branch search/list/status; password পরিবর্তন</td><td>branch অনুযায়ী তালিকা; approval ও rejection মানুষের সিদ্ধান্ত</td></tr>
+<tr><td>Operations Admin (<code>admin</code>, operations portal)</td><td>Networld/operations administrator</td><td>Vendor-এর operational কাজ; operations user তৈরি/সংশোধন, active status ও deletion-এর মেনু</td><td>operations portal-এর সব requisition; bank branch/role management আলাদা portal-এ</td></tr>
+<tr><td>Vendor (<code>vendor</code>)</td><td>production, printing preparation ও dispatch operator</td><td>Excel import; request search; print preparation; serial range; order management; challan; bill/report download; status tracking</td><td>operations-এর সব branch-এর তথ্য; operations user management-এর মেনু দেখায় না; branch-manager approval role নয়</td></tr>
+</tbody></table></div>
+<p>Bank user তৈরির form-এ <code>user</code>, <code>manager</code>, <code>admin</code>, <code>gsd</code> role আছে। Operations-এর সাধারণ Create User form নতুন account-কে <code>vendor</code> হিসেবে তৈরি করে; সেখানে নতুন Operations Admin তৈরির সাধারণ role selector পাওয়া যায়নি।</p>
+<h2>৪. কাজের অধিকার এক নজরে</h2>
+<p>চিহ্ন: <strong>আছে</strong> = স্বাভাবিক মেনু/কোডে ব্যবস্থা; <strong>সীমিত</strong> = সংশ্লিষ্ট branch বা নির্দিষ্ট মডিউল; <strong>নেই</strong> = সেই role-এর স্বাভাবিক মেনুতে নেই। এটি security certification নয়।</p>
+<div class="table-wrap"><table><thead><tr><th>কাজ</th><th>Bank Admin</th><th>GSD</th><th>Branch User</th><th>Manager</th><th>Ops Admin</th><th>Vendor</th></tr></thead><tbody>
+<tr><td>Overview dashboard</td><td>আছে</td><td>আছে</td><td>branch</td><td>branch</td><td>আছে</td><td>আছে</td></tr>
+<tr><td>Bank user ও branch management</td><td>আছে</td><td>নেই</td><td>নেই</td><td>নেই</td><td>নেই</td><td>নেই</td></tr>
+<tr><td>Operations user management</td><td>নেই</td><td>নেই</td><td>নেই</td><td>নেই</td><td>আছে</td><td>নেই</td></tr>
+<tr><td>Manual requisition entry</td><td>নেই</td><td>নেই</td><td>আছে*</td><td>নেই</td><td>নেই</td><td>নেই</td></tr>
+<tr><td>Manager approve/reject</td><td>নেই</td><td>নেই</td><td>নেই</td><td>branch</td><td>নেই</td><td>নেই</td></tr>
+<tr><td>Search/list/status</td><td>সীমিত</td><td>সব branch</td><td>branch</td><td>branch</td><td>সব branch</td><td>সব branch</td></tr>
+<tr><td>Excel requisition import</td><td>নেই</td><td>নেই</td><td>নেই</td><td>নেই</td><td>আছে</td><td>আছে</td></tr>
+<tr><td>Serial ও print preparation</td><td>নেই</td><td>নেই</td><td>নেই</td><td>নেই</td><td>আছে</td><td>আছে</td></tr>
+<tr><td>Order, challan, dispatch কাজ</td><td>নেই</td><td>নেই</td><td>নেই</td><td>নেই</td><td>আছে</td><td>আছে</td></tr>
+<tr><td>Delivery acknowledgement</td><td>নেই</td><td>নেই</td><td>branch</td><td>নেই</td><td>নেই</td><td>নেই</td></tr>
+<tr><td>Bill/production export-এর স্বাভাবিক মেনু</td><td>নেই</td><td>সীমিত report</td><td>সীমিত report</td><td>সীমিত report</td><td>আছে</td><td>আছে</td></tr>
+</tbody></table></div>
+<p>*Manual entry form দেখা গেছে এবং স্ক্রিন পরীক্ষা হয়েছে; cheque entry submission-এর SQL-এ duplicate column আছে। সংশোধন ও test submission ছাড়া এটি নির্ভুল কাজ করছে বলা যাবে না। Bank Admin-এর overview/quick search থাকা এবং তার sidebar-এ GSD-এর সব search menu থাকা একই বিষয় নয়।</p>
+<h2>৫. সফটওয়্যার কী কী করতে পারে</h2>
+<h3>Dashboard ও তালিকা</h3>
+<ul>
+<li>Database থেকে total, pending, ordered ও delivered-এর সংখ্যা দেখায়।</li>
+<li>Approval, pending, ordered, dispatched, delivered ও rejected distribution দেখায়।</li>
+<li>সর্বশেষ ৮টি cheque requisition দেখায়। Branch User/Manager-এর dashboard collecting branch অনুযায়ী সীমিত।</li>
+<li>Cheque ও other item-এর status তালিকা আলাদা। Dashboard-এর মূল summary cheque requisition-এর; other item-এর সব সংখ্যা সেখানে একসঙ্গে দেখানো হয় না।</li>
+<li>Pagination দিয়ে তালিকার পরবর্তী পেজ দেখা যায়। নতুন compact total list প্রতি পেজে ৩০টি request দেখায়।</li>
+</ul>
+<h3>Requisition ও approval</h3>
+<ul>
+<li>Branch User-এর cheque ও other item entry form আছে। Account/customer, branch, item/account type, leaf/book quantity, delivery priority ও remarks-এর তথ্য রাখার ব্যবস্থা আছে।</li>
+<li>Manual cheque entry-এর কোড নতুন request-কে <code>approval</code> status দেওয়ার উদ্দেশ্যে লেখা। বর্তমান submission ত্রুটি নিচে উল্লেখ আছে।</li>
+<li>Manager-এর approve করলে cheque request <code>pending</code> হয়; reject করলে <code>reject</code> হয়। Approver ও approval সময় সংরক্ষণের কোড আছে।</li>
+<li>Branch User dispatch হওয়া item বাস্তবে পাওয়ার পরে acknowledgement করলে cheque request <code>delivered</code> করার কোড আছে।</li>
+</ul>
+<h3>Excel import</h3>
+<ul>
+<li>Operations portal-এ cheque <code>.xls</code> import আছে। Card ও other item import-এর route/form-ও আছে; বর্তমান sidebar-এ তিনটির সব link দেখায় না।</li>
+<li>Cheque import existing column order অনুযায়ী পড়ে; data loop পঞ্চম row থেকে শুরু হয়। অন্য import-এর template একই ধরে নেওয়া যাবে না।</li>
+<li>একই filename আগে import হয়েছে কি না পরীক্ষা করার ব্যবস্থা আছে; এটি একই customer/account/request নতুন filename-এ আবার import হওয়া ঠেকানোর পূর্ণ ব্যবস্থা নয়।</li>
+<li>Cheque import কোড <code>Pending</code> status দেয়; other-item import কোড <code>Ordered</code> status দেয়। তাই import সবসময় manager-approval ধাপ দিয়ে যায়—এমন ধারণা করা ঠিক নয়।</li>
+<li>Import সফল হলে database-এ record যোগ হয় এবং upload-এর কপি সংশ্লিষ্ট folder-এ রাখার কোড আছে। বাস্তব import submission এখনো এই local setup-এ পরীক্ষা করা হয়নি।</li>
+</ul>
+<h3>Production, serial, challan ও রিপোর্ট</h3>
+<ul>
+<li>Serial range-এর start/end number সেট করা যায়। Print preparation-এর কোড আগের serial ও leaf quantity ব্যবহার করে number হিসাব করার ব্যবস্থা রাখে; operator যাচাই ও confirm করেন।</li>
+<li>Pending request বাছাই করে production/order status update করার ব্যবস্থা আছে। Manage orders-এ ordered request দেখা ও dispatch status update-এর কোড আছে।</li>
+<li>Cheque/other item challan number দেওয়া এবং branch অনুযায়ী challan/report তৈরির ব্যবস্থা আছে।</li>
+<li>Bill summary, branch-wise bill, challan, PSI এবং MICR/personalisation-এর export link/code আছে। সব ধরনের export সম্পূর্ণ পরীক্ষা হয়নি।</li>
+<li>নতুন total-list-এর <code>Download this page</code> বর্তমান পেজের তথ্য export করে; সব ৭৭,০৭৫ record একসঙ্গে download করে না।</li>
+<li>Database search এবং বর্তমান পেজে দ্রুত <code>Filter this list</code> আলাদা। Filter কেবল ইতিমধ্যে load হওয়া row খোঁজে।</li>
+</ul>
+<h3>User ও UI</h3>
+<ul>
+<li>Bank user-এর role, branch association ও active status ব্যবস্থাপনার form আছে। Operations user create/edit/active/delete-এর কোড আছে।</li>
+<li>আধুনিক login, password show/hide, responsive sidebar, mobile menu, status badge ও একরকম form/table design আছে।</li>
+<li>Login সফল হলে session ID regenerate হয়; sign out আছে। Role নির্ধারণ account-এ হয়।</li>
+</ul>
+<h2>৬. একটি সাধারণ কাজের প্রবাহ</h2>
+<p><strong>Manual bank request-এর উদ্দেশ্যকৃত প্রবাহ:</strong></p>
+<p>Branch User entry → Awaiting approval → Manager approve → Pending → Operations serial/production preparation → Ordered → Challan/dispatch → Dispatched → Branch receipt acknowledgement → Delivered</p>
+<p><strong>Rejected request:</strong> Manager reject করলে request rejected তালিকায় যায়। সংশোধন/পুনরায় পাঠানোর কিছু পুরোনো কোড ও মেনু আছে, তবে বর্তমান routing/permission মিলিয়ে end-to-end পরীক্ষা করা হয়নি।</p>
+<p><strong>Excel import-এর প্রবাহ:</strong> প্রস্তুত Excel ফাইল → Operations import → import module অনুযায়ী Pending/Ordered → production/challan/dispatch → receipt। এটি manual bank approval-এর সমান প্রবাহ নয়।</p>
+<p>এই ধাপগুলো বর্তমান কোডের উদ্দেশ্য বোঝায়; live request দিয়ে সম্পূর্ণ সফল চক্রের প্রত্যয়ন নয়।</p>
+<h2>৭. Status-এর অর্থ ও দায়িত্ব</h2>
+<div class="table-wrap"><table><thead><tr><th>Status</th><th>অর্থ</th><th>সাধারণ দায়িত্ব</th></tr></thead><tbody>
+<tr><td><code>approval</code></td><td>অনুমোদনের অপেক্ষায়</td><td>Branch Manager সিদ্ধান্ত দেবেন</td></tr>
+<tr><td><code>pending</code></td><td>approval/import হয়েছে; production preparation বাকি</td><td>Operations/Vendor প্রস্তুত করবেন</td></tr>
+<tr><td><code>ordered</code></td><td>order/production পর্যায়ে</td><td>Operations/Vendor serial, production ও challan যাচাই করবেন</td></tr>
+<tr><td><code>dispatched</code></td><td>পাঠানোর তথ্য update করা হয়েছে</td><td>Operations/Vendor প্রকৃত পাঠানোর পরে update করবেন</td></tr>
+<tr><td><code>delivered</code></td><td>receipt/acknowledgement update হয়েছে</td><td>Branch User বাস্তবে গ্রহণ করে নিশ্চিত করবেন</td></tr>
+<tr><td><code>reject</code></td><td>request বাতিল/অনুমোদিত হয়নি</td><td>Manager; সংশোধনের জন্য সংশ্লিষ্ট দল যোগাযোগ করবেন</td></tr>
+</tbody></table></div>
+<p>Status update নিজে physical production, courier delivery বা cheque book হাতে পাওয়ার প্রমাণ সংগ্রহ করে না। দায়িত্বপ্রাপ্ত ব্যক্তি বাস্তব কাজের সঙ্গে মিলিয়ে update করবেন।</p>
+<h2>৮. সফটওয়্যারের বাইরে কী করতে হয়</h2>
+<div class="table-wrap"><table><thead><tr><th>বাইরের কাজ</th><th>সফটওয়্যারের সম্পর্ক</th></tr></thead><tbody>
+<tr><td>Bank/branch থেকে source data সংগ্রহ ও Excel প্রস্তুত</td><td>সঠিক format-এর file মানুষ upload করেন; automatic core-banking sync নিশ্চিত পাওয়া যায়নি</td></tr>
+<tr><td>Approval ও quality check-এর সিদ্ধান্ত</td><td>সফটওয়্যার সিদ্ধান্ত record করে; মানুষ তথ্য ও অনুমোদন যাচাই করেন</td></tr>
+<tr><td>Cheque/MICR ছাপানো, binding ও packing</td><td>Export/preparation আছে; machine integration পরীক্ষা বা নিশ্চিত করা হয়নি</td></tr>
+<tr><td>Courier বা শাখায় physical delivery</td><td>সফটওয়্যারে dispatch/receipt record হয়; physical delivery বাইরে হয়</td></tr>
+<tr><td>Bill payment ও পূর্ণ হিসাব মেলানো</td><td>Bill/report আছে; পূর্ণ payment/accounting integration পাওয়া যায়নি</td></tr>
+<tr><td>Database backup ও restore</td><td>স্বয়ংক্রিয় scheduled backup মেনু/ব্যবস্থা পাওয়া যায়নি; administrator-কে আলাদা ব্যবস্থা করতে হবে</td></tr>
+<tr><td>একাধিক computer থেকে ব্যবহার</td><td>বর্তমান server loopback/local-এ চলছে; network deployment আলাদা কাজ</td></tr>
+</tbody></table></div>
+<p>Backup করতে হলে database-এর সামঞ্জস্যপূর্ণ SQL export অথবা server যথাযথভাবে বন্ধ করে complete backup-এর ব্যবস্থা করতে হবে। চলন্ত database-এর table file অযাচিতভাবে copy করাকে নিশ্চিত backup হিসেবে ধরা যাবে না।</p>
+<h2>৯. দৈনন্দিন দায়িত্বের প্রস্তাবিত ভাগ</h2>
+<ol>
+<li><strong>Bank Admin:</strong> ব্যক্তিগত user account, সঠিক role ও branch association বজায় রাখবেন; কর্মী পরিবর্তনে active status সংশোধন করবেন।</li>
+<li><strong>Branch User:</strong> সঠিক তথ্য entry/import source দেবেন; status অনুসরণ করবেন; আসল item পাওয়ার পরে acknowledgement দেবেন।</li>
+<li><strong>Manager:</strong> request-এর account, quantity ও প্রয়োজন যাচাই করে approve/reject করবেন।</li>
+<li><strong>GSD:</strong> branch-গুলোর request ও অগ্রগতি পর্যবেক্ষণ করবেন; সমস্যা হলে bank/operations দলের সঙ্গে সমন্বয় করবেন।</li>
+<li><strong>Vendor:</strong> production data, serial, printing export, challan ও dispatch information যাচাই করে কাজ করবেন।</li>
+<li><strong>Operations Admin:</strong> operations account management, দলীয় তদারকি, backup ও local server পরিচালনার দায়িত্ব নির্ধারণ করবেন। Backup এখানে সাংগঠনিক দায়িত্ব; তৈরি হয়ে যাওয়া automatic feature নয়।</li>
+</ol>
+<h2>১০. কী পরীক্ষা হয়েছে, কী হয়নি</h2>
+<div class="table-wrap"><table><thead><tr><th>বিষয়</th><th>বর্তমান যাচাই</th></tr></thead><tbody>
+<tr><td>Bank/operations login, ভুল password, logout</td><td>Browser পরীক্ষা হয়েছে</td></tr>
+<tr><td>Manager portal-এর password compatibility</td><td>Local Bank Admin account দিয়ে hash compatibility পরীক্ষা হয়েছে</td></tr>
+<tr><td>Branch User/Manager স্ক্রিন ও dashboard branch scope</td><td>Temporary test session দিয়ে পরীক্ষা হয়েছে; আসল role-account creation/login নয়</td></tr>
+<tr><td>Dashboard, search, serial, challan, bill ও user-management screens</td><td>সংশ্লিষ্ট browser/page checks হয়েছে</td></tr>
+<tr><td>Mobile menu, table filter, pagination, password toggle</td><td>Browser checks হয়েছে</td></tr>
+<tr><td>PHP syntax</td><td>১৬১টি application PHP file পাস করেছে</td></tr>
+<tr><td>Existing XLS reading ও XLS write/read</td><td>পরীক্ষা হয়েছে</td></tr>
+<tr><td>Paginated report export</td><td>Local download পরীক্ষা হয়েছে</td></tr>
+<tr><td>প্রকৃত requisition entry/import → approve → order → dispatch → receipt</td><td>Live record দিয়ে সম্পূর্ণ পরীক্ষা হয়নি</td></tr>
+<tr><td>User create/delete, role change ও branch পরিবর্তনের সব write action</td><td>Screen/code পরিদর্শন হয়েছে; সব submission পরীক্ষা হয়নি</td></tr>
+<tr><td>GSD-এর সব কাজ, প্রতিটি report/printing export</td><td>পূর্ণ কার্যকরী পরীক্ষা হয়নি</td></tr>
+<tr><td>Physical printing, courier, bank directory integration</td><td>পরীক্ষা হয়নি</td></tr>
+</tbody></table></div>
+<p>এই নির্দেশিকা তৈরির সময় database-এ ৭৭,০৭৫ cheque requisition ও ৩,০৭,৪৩৮ delivery/challan row আছে। দ্বিতীয় সংখ্যাটি delivered cheque book-এর সংখ্যা নয়; <code>del_challan</code> table-এর record count।</p>
+<h2>১১. বর্তমান সীমাবদ্ধতা ও নির্দিষ্ট অসামঞ্জস্য</h2>
+<ul>
+<li><strong>Manual cheque entry:</strong> <code>chk_request.php</code>-এর INSERT column list-এ <code>collecting_branch</code> ও <code>collecting_branch_code</code> দুবার আছে। Form খোলা যাচাই হয়েছে; submit-এর এই ত্রুটি সংশোধনের আগে নিয়মিত live entry শুরু করা ঠিক হবে না।</li>
+<li><strong>GSD rejected management:</strong> GSD sidebar-এ rejected management link আছে, কিন্তু সংশ্লিষ্ট পুরোনো cheque-management পেজের role condition GSD/Admin-কে signin-এ পাঠায়। মেনু থাকা মানেই এ কাজ নির্ভরযোগ্যভাবে চালু নয়।</li>
+<li><strong>Permission enforcement:</strong> কিছু পুরোনো পেজ JavaScript redirect ব্যবহার করে; সব write/export route-এ সমান server-side role/branch check যাচাই হয়নি। এই role table-কে সম্পূর্ণ access-control audit হিসেবে ব্যবহার করবেন না।</li>
+<li><strong>Import ও manual approval আলাদা:</strong> imported record-এর status module অনুযায়ী আগে থেকেই Pending/Ordered হতে পারে; অনুমোদনের নীতি প্রতিষ্ঠানের দায়িত্বে নির্ধারণ করতে হবে।</li>
+<li><strong>Backend:</strong> UI 2.0 হলেও বর্তমান application পুরোনো PHP 5.6 compatibility runtime ও legacy database code ব্যবহার করে। পূর্ণ backend migration হয়নি।</li>
+<li><strong>Deployment:</strong> শুধু এই computer-এ local access চালু। Internet বা office-network production চালু করার আগে backend, permissions ও business workflow-এর আলাদা কাজ প্রয়োজন।</li>
+</ul>
+<p>এই documentation-এর কাজ বর্তমান অবস্থা বোঝানো; উপরের ত্রুটিগুলো এই documentation তৈরির কাজে সফটওয়্যারে পরিবর্তন করে সংশোধন করা হয়নি।</p>
+<h2>১২. দরকারি ফাইল ও সহায়তা</h2>
+<div class="table-wrap"><table><thead><tr><th>ফাইল/ফোল্ডার</th><th>ব্যবহার</th></tr></thead><tbody>
+<tr><td><code>Start-Requisition.cmd</code> / <code>Stop-Requisition.cmd</code></td><td>local software চালু/বন্ধ</td></tr>
+<tr><td><code>LOCAL-LOGIN.txt</code></td><td>local test credentials; দায়িত্বপ্রাপ্ত ব্যক্তির জন্য</td></tr>
+<tr><td><code>README-LOCAL.md</code></td><td>local setup ও runtime তথ্য</td></tr>
+<tr><td><code>UI-UPGRADE.md</code></td><td>UI upgrade-এর পরিবর্তন ও যাচাই</td></tr>
+<tr><td><code>runtime/logs</code></td><td>সমস্যা হলে diagnostic logs</td></tr>
+<tr><td><code>runtime/db-data</code></td><td>কাজের database; ইচ্ছেমতো edit/delete করবেন না</td></tr>
+<tr><td><code>database-backup</code></td><td>ZIP থেকে extracted original table backup</td></tr>
+<tr><td><code>ui-backup</code></td><td>UI পরিবর্তনের আগের কিছু ফাইলের snapshot</td></tr>
+</tbody></table></div>
+<p>মূল source যাচাই: <code>aibl/body_content/left_menu.php</code>, <code>net/net_left_menu.php</code>, <code>ui/shell.php</code>, <code>ui/dashboard.php</code>, bank user-management, approval/acknowledgement, operations import/order/serial এবং pagination-এর কোড। Screenshot ও browser-check ফল <code>runtime/tmp</code>-এ আছে।</p><footer class="doc-end">বর্তমান local software, code ও browser checks-এর ভিত্তিতে প্রস্তুত • ৫ অক্টোবর ২০২৬</footer></article></body></html>

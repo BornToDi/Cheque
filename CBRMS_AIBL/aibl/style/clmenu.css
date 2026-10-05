@@ -1,0 +1,17 @@
+.mH {
+	/*BORDER-TOP: #300 1px solid; 
+	FONT-WEIGHT: bold; 	
+	COLOR: #60c*/
+	CURSOR: pointer; 
+}
+.mC {	
+	MARGIN-LEFT: 20px;	
+}
+.mL {
+	DISPLAY: none; MARGIN-BOTTOM: 0px;
+	MARGIN-LEFT: 20px;
+	
+}
+.mO {
+	DISPLAY: block; MARGIN-LEFT: 0px;
+}

@@ -1,0 +1,227 @@
+/*BODY {
+	BACKGROUND: #ffffff; COLOR: black
+}*/
+
+BODY {
+	MARGIN: 0px; SCROLLBAR-FACE-COLOR: #7b879f; FONT-SIZE: 10px; SCROLLBAR-HIGHLIGHT-COLOR: #f5f5f5; SCROLLBAR-SHADOW-COLOR: #ffffff; COLOR: #787d96; SCROLLBAR-ARROW-COLOR: #ffffff; FONT-FAMILY: verdana, Arial, Helvetica, sans-serif; SCROLLBAR-BASE-COLOR: #26398f; scrollbar-3d-light-color: #666666; scrollbar-dark-shadow-color: #423D5F
+}
+
+A:link {
+	COLOR: #363636; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #363636; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #363636; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #363636; TEXT-DECORATION: underline
+}
+A.kbase:link {
+	FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.kbase:visited {
+	FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.kbase:active {
+	FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.kbase:hover {
+	FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: underline
+}
+TABLE.border {
+	BACKGROUND: #8c8984; COLOR: black
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TR {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TD.back {
+	BACKGROUND: #ffffff; FONT-SIZE: 11px;
+}
+TD.back2 {
+	BACKGROUND: #eeeeee; FONT-SIZE: 11px;
+}
+TD.date {
+	FONT-SIZE: 11px; BACKGROUND: #eeeeee; COLOR: #000000; FONT-FAMILY: "Arial"
+}
+TD.hf {
+	FONT-SIZE: 11px; BACKGROUND: #BECDE0; COLOR: #000000; FONT-FAMILY: "Arial"
+}
+A.hf:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: "Arial"; TEXT-DECORATION: none
+}
+A.hf:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: "Arial"; TEXT-DECORATION: none
+}
+A.hf:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: "Arial"; TEXT-DECORATION: none
+}
+A.hf:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: "Arial"; TEXT-DECORATION: underline
+}
+TD.info {
+	FONT-SIZE: 12px; BACKGROUND: #920e1f; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A.info:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "Arial"; TEXT-DECORATION: none
+}
+A.info:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "Arial"; TEXT-DECORATION: none
+}
+A.info:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "Arial"; TEXT-DECORATION: none
+}
+A.info:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: "Arial"; TEXT-DECORATION: underline
+}
+SELECT {
+	FONT-SIZE: 11px; BACKGROUND: #FFE6D9; COLOR: #000000; FONT-FAMILY: Verdana, arial, helvetica, sans-serif
+}
+OPTION {
+	FONT-SIZE: 11px; BACKGROUND: #FFE6D9; COLOR: #000000; FONT-FAMILY: Verdana, arial, helvetica, sans-serif
+}
+TEXTAREA {
+	FONT-SIZE: 11px; BACKGROUND: #FFE6D9; COLOR: #000000; FONT-FAMILY: Verdana, arial, helvetica, sans-serif
+}
+INPUT {
+	FONT-SIZE: 11px; BACKGROUND: #FFE6D9; COLOR: #000000; FONT-FAMILY: Verdana, arial, helvetica, sans-serif
+}
+TD.cat {
+	FONT-SIZE: 12px; BACKGROUND: #eeeeee; COLOR: #000000; FONT-FAMILY: "Arial"
+}
+TD.stats {
+	FONT-SIZE: 11px; BACKGROUND: #eeeeee; COLOR: #000000; FONT-FAMILY: "Arial"
+}
+TD.error {
+	FONT-SIZE: 11px; BACKGROUND: #eeeeee; COLOR: #ff0000; FONT-FAMILY: "Arial"
+}
+TD.subcat {
+	FONT-SIZE: 12px; BACKGROUND: #eeeeee; COLOR: #000000; FONT-FAMILY: "Arial"
+}
+INPUT.box {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+TABLE.border2 {
+	BACKGROUND: #ffffff;
+}
+TD.install {
+	FONT-SIZE: 11px; BACKGROUND: #dddddd; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TABLE.install {
+	BACKGROUND: #000099
+}
+TD.head {
+	FONT-SIZE: 11px; BACKGROUND: #6974b5; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A.install:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #6974b5; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.install:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #6974b5; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.install:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000099; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.install:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000099; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+#search{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 15px;
+	color: #189ec6;
+}	
+.red {
+	font-family: verdana,helvetica;
+	color: #ffffff;
+	background-color: #df0000;
+	font-weight: bold;
+	FONT-SIZE: 11px;
+}
+.green {
+	font-family: verdana,helvetica;
+	color: #ffffff;
+	background-color: #00df00;
+	font-weight: bold;
+	FONT-SIZE: 11px;
+}
+A.edit:link {
+	COLOR: #ffffff; TEXT-DECORATION: none;
+	font-family:verdana;
+	font-size:9px;
+	font-weight:bold;
+}
+A.edit:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none;
+	font-family:verdana;
+	font-size:9px;
+	font-weight:bold;
+}
+A.edit:hover {
+	COLOR: #0000ff; TEXT-DECORATION: none;
+	font-family:verdana;
+	font-size:9px;
+	font-weight:bold;	
+}
+input.dead {
+	width: 100px;
+}
+
+.syntax_hilite {
+	BORDER-RIGHT: #26536a 1px solid; 
+	BORDER-BOTTOM: #26536a 1px solid; 
+	BORDER-TOP: #26536a 1px solid; 
+	BORDER-LEFT: #26536a 1px solid; 
+	PADDING-RIGHT: 1px; 	
+	PADDING-LEFT: 1px; 
+	WHITE-SPACE: nowrap; 
+	MARGIN-BOTTOM: 1px; 
+	PADDING-BOTTOM: 1px; 
+	OVERFLOW: auto; 
+	WIDTH: 100%px; 
+	HEIGHT: 400px;
+	PADDING-TOP: 1px; 
+	FONT-SIZE: 13px; 
+	FONT-FAMILY: 'Courier New',Courier,monospace; 	
+	BACKGROUND-COLOR: #fefefe;
+}
+
+.syntax_manager{
+	BORDER-RIGHT: #26536a 1px solid; 
+	BORDER-BOTTOM: #26536a 1px solid; 
+	BORDER-TOP: #26536a 1px solid; 
+	BORDER-LEFT: #26536a 1px solid; 
+	PADDING-RIGHT: 0px; 	
+	PADDING-LEFT: 0px; 
+	WHITE-SPACE: nowrap; 
+	MARGIN-BOTTOM: 0px; 
+	PADDING-BOTTOM: 0px; 
+	OVERFLOW: auto; 
+	WIDTH: 1004px; 
+	HEIGHT: 350px;
+	PADDING-TOP: 0px; 
+	FONT-SIZE: 13px; 
+	FONT-FAMILY: 'Courier New',Courier,monospace; 	
+	BACKGROUND-COLOR: #fefefe;
+}
+.syntax_manager1{
+	BORDER-RIGHT: #26536a 1px solid; 
+	BORDER-BOTTOM: #26536a 1px solid; 
+	BORDER-TOP: #26536a 1px solid; 
+	BORDER-LEFT: #26536a 1px solid; 
+	PADDING-RIGHT: 0px; 	
+	PADDING-LEFT: 0px; 
+	WHITE-SPACE: nowrap; 
+	MARGIN-BOTTOM: 0px; 
+	PADDING-BOTTOM: 0px; 
+	OVERFLOW: auto; 
+	WIDTH: 850px; 
+	HEIGHT: 350px;
+	PADDING-TOP: 0px; 
+	FONT-SIZE: 13px; 
+	FONT-FAMILY: 'Courier New',Courier,monospace; 	
+	BACKGROUND-COLOR: #fefefe;
+}

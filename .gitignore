@@ -1,0 +1,46 @@
+# Local credentials and machine-specific configuration
+LOCAL-LOGIN.txt
+.env
+.env.*
+!.env.example
+config.local.php
+php.ini
+
+# Portable runtimes, backups, test sessions and browser artifacts
+/runtime/
+/database-backup/
+/ui-backup/
+/.publish/
+/node_modules/
+*.log
+*.zip
+*.tgz
+*.MYD
+*.MYI
+*.frm
+*.opt
+*.db
+*.sql
+!/database/schema.sql
+
+# Customer spreadsheets, generated production files and legacy experiments
+*.xls
+*.xlsx
+*.csv
+*.ppt
+*.pptx
+*.mno
+/CBRMS_AIBL/final/
+/CBRMS_AIBL/edit test file/
+**/inbox/
+**/Copy of inbox/
+**/poinbox/
+**/podone/
+**/done/
+**/ucbl data/
+**/ucbl card data/
+**/aibl others data/
+**/upload/
+**/_notes/
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,23 @@
+body { 
+  color : #000000; 
+  background : #ffffff; 
+  font-family : "Times New Roman", Times, serif;
+  font-size : 11pt; 
+}
+a { 
+  text-decoration : underline; 
+  color : #0000ff; 
+}
+#print_button, #close, #other { 
+  display : none; 
+} 
+
+#brk { 
+ /*page-break-inside="avoid"> */
+ page-break-before: always;
+ 
+} 
+#brk_a { 
+ /*page-break-inside="avoid"> */
+ page-break-after: always;
+} 
